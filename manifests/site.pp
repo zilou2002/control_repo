@@ -1,9 +1,9 @@
 node default {
- # node 'master.puppet.vm' {
+ #node 'master.puppet.vm' {
     file { '/root/README':
     ensure  => file,
     content => "Here it is",
- }
+}
 # }
 # node 'minetest.puppet.vm' {
 #   include role::minecraft_server
@@ -17,9 +17,4 @@ node default {
 # node /^netrr/ {
 #   include role::netrr
 # }
-if $facts['twitch_role'] != undef {
-    $cluster = $facts['twitch_role']
-  }
-  hiera_include('classes')
-}
 #}
