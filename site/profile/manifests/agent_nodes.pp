@@ -7,7 +7,7 @@ class profile::agent_nodes {
     ip      => '172.18.0.2',
   }
   host {'netrr-int.puppet.vm':
-  ensure  => present,
-  ip      => '172.18.0.3',
+    ensure  => present,
+    ip      => '172.18.0.3',
   }
 }
