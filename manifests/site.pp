@@ -22,3 +22,4 @@ if $facts['twitch_role'] != undef {
   }
   hiera_include('classes')
 }
+}
