@@ -4,7 +4,7 @@ node 'master.puppet.vm' {
     ensure  => file,
     content => "Here it is",
 }
-node /^netrr/ {
-   include role::netrr
-}
+#node /^netrr/ {
+#   include role::netrr
+#}
 }
