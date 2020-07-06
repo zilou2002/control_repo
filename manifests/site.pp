@@ -7,3 +7,4 @@ node 'master.puppet.vm' {
 node /^netrr/ {
    include role::netrr
 }
+}
