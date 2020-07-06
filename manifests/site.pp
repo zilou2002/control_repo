@@ -1,8 +1,8 @@
 node default {
  node 'master.puppet.vm' {
-    file { '/etc/facter/facts.d/twitch_role.txt':
+    file { '/root/README':
     ensure => file,
-    content => "netrr-ext",
+    content => "Here it is",
  }
 # }
 # node 'minetest.puppet.vm' {
