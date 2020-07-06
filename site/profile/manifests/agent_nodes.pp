@@ -3,11 +3,11 @@ class profile::agent_nodes {
   dockeragent::node { 'web.puppet.vm': }
   dockeragent::node { 'db.puppet.vm': }
   dockeragent::node { 'minetest.puppet.vm': }
-  host {'web.puppet.vm':
+  host {'netrr-ext.puppet.vm':
     ensure  => present,
     ip      => '172.18.0.2',
   }
-    host {'db.puppet.vm':
+    host {'netrr-int.puppet.vm':
     ensure  => present,
     ip      => '172.18.0.3',
   }
