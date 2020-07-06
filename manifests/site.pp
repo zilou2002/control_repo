@@ -1,10 +1,9 @@
-#node default {
+node default {
+}
 node 'master.puppet.vm' {
-    file { '/root/README':
-    ensure  => file,
-    content => "Here it is",
+    include role::master_server
 }
 #node /^netrr/ {
 #   include role::netrr
 #}
-}
+#}
