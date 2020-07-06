@@ -4,6 +4,7 @@ node default {
     ensure  => file,
     content => "Here it is",
 }
+}
 # }
 # node 'minetest.puppet.vm' {
 #   include role::minecraft_server
